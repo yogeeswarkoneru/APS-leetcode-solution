@@ -55,12 +55,11 @@ class Solution {
                 }
             }
 
-            // If both nodes were found on this level
             if (xFound && yFound) {
-                return xParent != yParent; // True if they have different parents
+                return xParent != yParent;
             }
 
-            // If only one was found on this level, they can't be cousins
+            
             if (xFound || yFound) {
                 return false;
             }
